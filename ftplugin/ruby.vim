@@ -1,6 +1,3 @@
-" Main Ruby file is the current file.
-let g:Ruby_MainFile='%<'
-
 " Define a main file.
 map <silent> <LocalLeader>rm :let g:Ruby_MainFile=fnamemodify(bufname('%'), ':r')<CR>:echo 'Main file set to ' . g:Ruby_MainFile . '.rb'<CR>
 " Display the name of the main file.
